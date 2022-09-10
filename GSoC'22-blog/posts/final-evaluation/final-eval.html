@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"/>
-  <title>Community Bonding Period | GSoC'22 Blog</title>
+  <title>Final Evaluation | GSoC'22 Blog</title>
   <meta name="author" content="Amol Singh"/>
-  <link rel="canonical" href="https://sanbit876.github.io/GSoC'22-blog/community-bonding-period/community.html"/>
+  <link rel="canonical" href="https://sanbit876.github.io/GSoC'22-blog/mid-term-evaluation/mid-eval.html"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
@@ -37,22 +37,65 @@
 
 <div class="container">
   <br>
-  <h1 class="h1"><center><u>Community Bonding Period</u></center></h1>
+  <h1 class="h1"><center><u>Final Evaluation</u></center></h1>
   <br>
-  <h4 class="h4">• In Community Bonding Period, I had a meeting on a video call with my mentor (Robin Schmid) and we discussed about the project in more detail.</h4>
+  <h4 class="h4">• For the Final Evaluation, i had worked on adding new features to the exisiting visualization module which has been created earlier.</h4>
   <br>
-  <h4 class="h4">• I was shown a presentation prepared by my mentor where I got to know more about the concept of "Molecular-Networking" and how it is implemented in Mzmine3 Software.</h4>
+  <h4 class="h4">• My mentor provided me a sheet where he mentioned all the features which has to added or fixed.</h4>
   <br>
-  <h4 class="h4">• Apart from this we discussed about creating a test-project for testing the performance of the graph-visualization module under large datasets.</h4>
+  <h4 class="h4">• My work for the test-project has been summarized along with their commit links in this table:</h4>
   <br>
-  <h4 class="h4">• For the test-project i was provided with a synthetic dataset by the mentor.</h4>
-  <br>
-  <h4 class="h4">•Apart from the test-project, i was also assigned two issues:</h4>
-  <br>
-  <h4 class="h4">1.) <a href="https://github.com/mzmine/mzmine3/issues/731">[MN] Click on edges in visualizer opens MirrorScanWindowFXML or changes selected spectra</a></h4>
-  <br>
-  <h4 class="h4">2.) <a href="https://github.com/mzmine/mzmine3/issues/730">Compute the network layout in other thread (not JavaFX)</a></h4>
-
+  <table class="table table-bordered table-dark">
+  <thead>
+    <tr>
+      <th scope="col"><center><h5 class="h5">Sr No.</h5></center></th>
+      <th scope="col"><center><h5 class="h5">Description of Changes Made</h5></center></th>
+      <th scope="col"><center><h5 class="h5">Commit Link</center</h5></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><h5 class="h5">1.)</h5></th>
+      <td>Did some minor enhanchments into the visualizer by aligning the button in correct position and added a solid black border into the graph-pane</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/4f0bffc28d1c2e868ef4dd6ce4ec58c9740a68ec" class="link-info">4f0bffc</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><h5 class="h5">2.)</h5></th>
+      <td>Added unit test for stream_node_neighbours method (this method is used to stream the selected node along with it's neighboring nodes)</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/82cea38487389e146d5eb97261419f34358be085" class="link-info">82cea38</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><h5 class="h5">3.)</h5></th>
+      <td>New method of visualizing neighboring nodes provided by the mentor</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/3fdba9695add3916bff188ab64a2bb169e360e27" class="link-info">3fdba96</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><h5 class="h5">4.)</h5></th>
+      <td>Added a filtered-graph class for managing different instances of graph</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/fe3a1828321b548a5d2b6c9ac636c585107450bb" class="link-info">fe3a182</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><h5 class="h5">5.)</h5></th>
+      <td>Added option to run mirror_scan_module through selection of edges into the visualizer</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/d07134bc67e488472415caa70fe65ae6fdb3b510" class="link-info">d07134b</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><h5 class="h5">6.)</h5></th>
+      <td>Added option to visualize only connected nodes into the visualizer</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/d17bd1a0406d9889f27a7c0e5cdc09ab4bb0c957" class="link-info">d17bd1a</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><h5 class="h5">7.)</h5></th>
+      <td>Added option to set FeatureListRow on nodes</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/ce1878d02d600f5d3facea1ef2372693d7445a0e" class="link-info">ce1878d</a></td>
+    </tr>
+    <tr>
+      <th scope="row"><h5 class="h5">8.)</h5></th>
+      <td>Added option to handle keyboard events into the graph</td>
+      <td><a href="https://github.com/mzmine/mzmine3/pull/825/commits/1efa3804068af044551e3b3bd666438cc070e83b" class="link-info">1efa380</a></td>
+    </tr>
+  </tbody>
+</table>
   <!-- /.container -->
   </div>
   <!-- Bootstrap core JavaScript -->
